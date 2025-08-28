@@ -5,7 +5,7 @@ A sleek, accessible, and responsive calculator with a polished History dropdown,
 <p align="center">
   <!-- Inline SVG icon (renders on GitHub) -->
   <svg width="96" height="96" viewBox="0 0 64 64" aria-hidden="true" role="img">
-    <title>Calculator Icon</title>
+    <title>Calculator</title>
     <defs>
       <linearGradient id="calc-grad-1" x1="0" x2="1" y1="0" y2="1">
         <stop offset="0" stop-color="#8b5cf6"/>
@@ -38,6 +38,8 @@ A sleek, accessible, and responsive calculator with a polished History dropdown,
 ---
 
 ## Screenshots
+
+![image](https://github.com/Mdsaif4363/Calculator-App/blob/fad96a8cd051713b1be06c623d1b1d6ded192e41/Screenshot%202025-08-29%20005140.png)
 
 ## Contents
 

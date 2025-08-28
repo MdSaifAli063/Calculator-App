@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Calculator</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="calculator" role="application" aria-label="Calculator">
+      <header class="calc-header" style="display:flex; align-items:center; justify-content:space-between; gap:1rem;">
+        <h1 style="margin:0; font-size:1.25rem;">Calculator</h1>
+        <div class="toolbar" style="display:flex; align-items:center; gap:0.5rem;">
+          <span id="memory-indicator" aria-live="polite" title="Memory indicator" style="min-width:1.5rem; text-align:center;"></span>
+          <button class="button gray-bg" id="theme-toggle" type="button" aria-pressed="false" title="Toggle theme">Theme</button>
+        </div>
+      </header>
+
+      <div class="display" style="display:flex; flex-direction:column; gap:0.25rem; margin-top:0.5rem;">
+        <div id="last-expression" style="opacity:0.7; min-height:1.2em;" aria-live="polite"></div>
+        <input
+          type="text"
+          id="inputBox"
+          placeholder="0"
+          aria-label="Calculator display"
+          readonly
+        />
+        <hr />
+      </div>
+
+      <div class="keys" id="keys" style="display:grid; grid-template-columns:repeat(4, 1fr); gap:0.5rem; margin-top:0.5rem;">
+        <!-- Memory row -->
+        <button class="button gray-bg" data-action="mc" title="Memory Clear">MC</button>
+        <button class="button gray-bg" data-action="mr" title="Memory Recall">MR</button>
+        <button class="button gray-bg" data-action="m-plus" title="Memory Add">M+</button>
+        <button class="button gray-bg" data-action="m-minus" title="Memory Subtract">M-</button>
+
+        <!-- Controls and operators -->
+        <button class="button gray-bg" data-action="clear" title="All Clear">AC</button>
+        <button class="button gray-bg" data-action="del" title="Delete">DEL</button>
+        <button class="button gray-bg" data-value="%" title="Modulo">%</button>
+        <button class="button gray-bg" data-value="/" title="Divide">/</button>
+
+        <!-- Digits and operators -->
+        <button class="button gray-bg" data-value="7">7</button>
+        <button class="button gray-bg" data-value="8">8</button>
+        <button class="button gray-bg" data-value="9">9</button>
+        <button class="button gray-bg" data-value="*" title="Multiply">*</button>
+
+        <button class="button gray-bg" data-value="4">4</button>
+        <button class="button gray-bg" data-value="5">5</button>
+        <button class="button gray-bg" data-value="6">6</button>
+        <button class="button gray-bg" data-value="-" title="Subtract">-</button>
+
+        <button class="button gray-bg" data-value="1">1</button>
+        <button class="button gray-bg" data-value="2">2</button>
+        <button class="button gray-bg" data-value="3">3</button>
+        <button class="button gray-bg" data-value="+" title="Add">+</button>
+
+        <button class="button gray-bg" data-value="00">00</button>
+        <button class="button gray-bg" data-value="0">0</button>
+        <button class="button gray-bg" data-value="." title="Decimal point">.</button>
+        <button class="button gray-bg" data-action="equals" title="Equals">=</button>
+      </div>
+    </div>
+
+    <aside class="history-panel" style="margin-top:1rem;">
+      <details id="history-details" open>
+        <summary style="cursor:pointer;">History</summary>
+        <div style="display:flex; align-items:center; justify-content:space-between; margin:0.25rem 0;">
+          <small>Click an item to recall its result</small>
+          <button class="button gray-bg" id="clear-history" type="button" title="Clear history">Clear</button>
+        </div>
+        <ul id="history-list" style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.25rem;"></ul>
+      </details>
+    </aside>
+  </div>
+
+  <script src="index.js" defer></script>
+</body>
+</html>

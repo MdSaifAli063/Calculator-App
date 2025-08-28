@@ -1,0 +1,550 @@
+/* ====== Base & Theme Variables ====== */
+:root {
+  --font-sans: ui-sans-serif, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  --bg: #f4f6fb;
+  --bg-gradient: radial-gradient(1200px 800px at 10% 10%, #ffffff 0%, #f3f6ff 40%, #eef2ff 100%);
+  --surface: #ffffff;
+  --surface-2: #f2f5fb;
+  --text: #0f172a;
+  --text-muted: #475569;
+  --border: #e5e7eb;
+
+  --accent: #6366f1; /* indigo-500 */
+  --accent-600: #4f46e5;
+  --accent-700: #4338ca;
+  --accent-contrast: #ffffff;
+
+  --operator: #0ea5e9; /* sky-500 */
+  --operator-600: #0284c7;
+
+  --warning: #f59e0b; /* amber-500 */
+  --warning-600: #d97706;
+
+  --danger: #ef4444; /* red-500 */
+  --danger-600: #dc2626;
+
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+
+  --shadow-sm: 0 1px 2px rgba(16, 24, 40, 0.06);
+  --shadow-md: 0 6px 16px rgba(2, 6, 23, 0.08), 0 1px 2px rgba(2, 6, 23, 0.06);
+  --shadow-lg: 0 16px 40px rgba(2, 6, 23, 0.12), 0 2px 8px rgba(2, 6, 23, 0.08);
+
+  --focus-ring: 2px solid rgba(99, 102, 241, 0.5);
+
+  /* Buttons */
+  --btn-neutral: var(--surface-2);
+  --btn-neutral-hover: #e9edf6;
+  --btn-neutral-active: #dee5f2;
+
+  --btn-operator: rgba(14, 165, 233, 0.1);
+  --btn-operator-hover: rgba(14, 165, 233, 0.18);
+
+  --btn-accent: var(--accent);
+  --btn-accent-hover: var(--accent-600);
+  --btn-accent-active: var(--accent-700);
+
+  --btn-warning: rgba(245, 158, 11, 0.12);
+  --btn-warning-hover: rgba(245, 158, 11, 0.2);
+
+  --btn-danger: rgba(239, 68, 68, 0.12);
+  --btn-danger-hover: rgba(239, 68, 68, 0.2);
+}
+
+html.dark {
+  --bg: #0b1220;
+  --bg-gradient: radial-gradient(900px 600px at 85% 10%, #0b1220 0%, #0f172a 60%, #0b1220 100%);
+  --surface: #0f172a;
+  --surface-2: #0b1628;
+  --text: #e5e7eb;
+  --text-muted: #a1adbd;
+  --border: #1f2937;
+
+  --accent: #8b5cf6; /* violet-500 */
+  --accent-600: #7c3aed;
+  --accent-700: #6d28d9;
+
+  --operator: #38bdf8;
+  --operator-600: #0ea5e9;
+
+  --btn-neutral: #111b2e;
+  --btn-neutral-hover: #15233b;
+  --btn-neutral-active: #172a45;
+
+  --btn-operator: rgba(56, 189, 248, 0.12);
+  --btn-operator-hover: rgba(56, 189, 248, 0.2);
+
+  --btn-accent: var(--accent);
+  --btn-accent-hover: var(--accent-600);
+  --btn-accent-active: var(--accent-700);
+
+  --btn-warning: rgba(245, 158, 11, 0.16);
+  --btn-warning-hover: rgba(245, 158, 11, 0.26);
+
+  --btn-danger: rgba(239, 68, 68, 0.16);
+  --btn-danger-hover: rgba(239, 68, 68, 0.26);
+}
+
+/* ====== Reset ====== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background: var(--bg-gradient), var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ====== Layout ====== */
+.container {
+  min-height: 100dvh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.calculator {
+  width: 100%;
+  max-width: 420px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg);
+  padding: 16px 16px 18px;
+  backdrop-filter: saturate(120%) blur(8px);
+}
+
+/* ====== Header ====== */
+.calc-header {
+  padding: 4px 4px 0;
+}
+.calc-header h1 {
+  font-size: 1.15rem;
+  line-height: 1.1;
+  letter-spacing: 0.2px;
+  color: var(--text);
+}
+.toolbar {
+  gap: 8px;
+}
+
+/* Theme toggle button */
+#theme-toggle.button {
+  background: var(--btn-neutral);
+  color: var(--text);
+  border: 1px solid var(--border);
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-weight: 600;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.15s ease, background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+#theme-toggle.button:hover {
+  background: var(--btn-neutral-hover);
+}
+#theme-toggle.button:active {
+  transform: translateY(1px);
+}
+#memory-indicator {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 28px;
+  min-width: 28px;
+  padding: 0 6px;
+  border-radius: 999px;
+  border: 1px dashed var(--border);
+  color: var(--text-muted);
+  font-size: 0.875rem;
+  letter-spacing: 0.5px;
+  transition: all 0.2s ease;
+}
+#memory-indicator:not(:empty) {
+  border-style: solid;
+  background: rgba(99, 102, 241, 0.12);
+  color: var(--accent);
+  border-color: rgba(99, 102, 241, 0.35);
+}
+
+/* ====== Display ====== */
+.display {
+  padding: 8px 8px 0;
+}
+#last-expression {
+  min-height: 1.2em;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+#inputBox {
+  width: 100%;
+  border: none;
+  background: transparent;
+  color: var(--text);
+  font-size: clamp(1.8rem, 4.5vw, 2.4rem);
+  line-height: 1.2;
+  text-align: right;
+  padding: 8px 8px 0 8px;
+  outline: none;
+}
+.display hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border), transparent);
+  margin: 8px 0 0;
+}
+
+/* ====== Keys Grid ====== */
+.keys {
+  margin-top: 10px !important;
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important; /* ensure 4 columns */
+}
+
+.keys .button,
+.keys button {
+  all: unset;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  user-select: none;
+  cursor: pointer;
+
+  height: 58px;
+  padding: 0 12px;
+  border-radius: var(--radius-md);
+
+  color: var(--text);
+  background: var(--btn-neutral);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+
+  font-weight: 700;
+  letter-spacing: 0.2px;
+
+  transition:
+    transform 0.06s ease,
+    background 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    filter 0.2s ease;
+}
+.keys .button:hover,
+.keys button:hover {
+  background: var(--btn-neutral-hover);
+  box-shadow: var(--shadow-md);
+}
+.keys .button:active,
+.keys button:active {
+  transform: translateY(1px);
+  filter: brightness(0.98);
+}
+
+/* Focus ring */
+.keys .button:focus-visible,
+.keys button:focus-visible,
+#theme-toggle:focus-visible,
+#clear-history:focus-visible,
+.history-panel summary:focus-visible,
+.history-panel li:focus-visible {
+  outline: var(--focus-ring);
+  outline-offset: 2px;
+  border-radius: 10px;
+}
+
+/* Variants by action/value */
+.keys button[data-action="equals"] {
+  background: linear-gradient(180deg, var(--btn-accent), var(--btn-accent-hover));
+  color: var(--accent-contrast);
+  border-color: rgba(0,0,0,0);
+  box-shadow: 0 8px 16px rgba(99, 102, 241, 0.25), var(--shadow-sm);
+}
+.keys button[data-action="equals"]:hover {
+  background: linear-gradient(180deg, var(--btn-accent-hover), var(--btn-accent));
+  box-shadow: 0 10px 24px rgba(99, 102, 241, 0.35), var(--shadow-md);
+}
+.keys button[data-action="equals"]:active {
+  background: var(--btn-accent-active);
+}
+
+.keys button[data-action="clear"] {
+  color: var(--danger-600);
+  background: var(--btn-danger);
+  border-color: transparent;
+}
+.keys button[data-action="clear"]:hover {
+  background: var(--btn-danger-hover);
+}
+
+.keys button[data-action="del"] {
+  color: var(--warning-600);
+  background: var(--btn-warning);
+  border-color: transparent;
+}
+.keys button[data-action="del"]:hover {
+  background: var(--btn-warning-hover);
+}
+
+/* Operators */
+.keys button[data-value="/"],
+.keys button[data-value="*"],
+.keys button[data-value="-"],
+.keys button[data-value="+"],
+.keys button[data-value="%"] {
+  color: var(--operator-600);
+  background: var(--btn-operator);
+  border-color: transparent;
+}
+.keys button[data-value="/"]:hover,
+.keys button[data-value="*"]:hover,
+.keys button[data-value="-"]:hover,
+.keys button[data-value="+"]:hover,
+.keys button[data-value="%"]:hover {
+  background: var(--btn-operator-hover);
+}
+
+/* Memory keys */
+.keys button[data-action="mc"],
+.keys button[data-action="mr"],
+.keys button[data-action="m-plus"],
+.keys button[data-action="m-minus"] {
+  font-weight: 600;
+  color: var(--text-muted);
+  background: color-mix(in srgb, var(--btn-neutral) 90%, var(--accent) 10%);
+  border-color: color-mix(in srgb, var(--border) 80%, var(--accent) 20%);
+}
+.keys button[data-action="mc"]:hover,
+.keys button[data-action="mr"]:hover,
+.keys button[data-action="m-plus"]:hover,
+.keys button[data-action="m-minus"]:hover {
+  color: var(--accent);
+}
+
+/* Dot and zeros subtle style */
+.keys button[data-value="."],
+.keys button[data-value="0"],
+.keys button[data-value="00"] {
+  font-weight: 700;
+}
+
+/* ====== History Panel ====== */
+.history-panel {
+  max-width: 420px;
+  margin-inline: auto;
+  margin-top: 16px !important;
+  /* Subtle tinted backdrop to visually group the dropdown */
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--accent) 6%, transparent) 0%, transparent 44%),
+    var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: 10px 12px 12px;
+  overflow: hidden; /* keep rounded corners on sticky header and hover stripes */
+}
+
+/* Keep details tidy inside the panel */
+.history-panel details {
+  border-radius: var(--radius-lg);
+}
+
+/* Open state adds a subtle divider and slightly stronger backdrop */
+.history-panel details[open] > summary {
+  border-bottom: 1px dashed var(--border);
+  background: color-mix(in srgb, var(--surface) 92%, var(--accent) 8%);
+}
+
+/* Summary header improvements */
+.history-panel summary {
+  list-style: none;
+  font-weight: 700;
+  color: var(--text);
+  padding: 8px 12px 12px;
+  position: sticky; /* keep the header visible while scrolling items */
+  top: 0;
+  z-index: 1;
+  background: color-mix(in srgb, var(--surface) 96%, var(--accent) 4%);
+  border-radius: 10px;
+  outline: none;
+  transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Remove default marker */
+.history-panel summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Chevron with smoother motion */
+.history-panel summary::after {
+  content: "▾";
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  color: var(--text-muted);
+  transition: transform 0.25s ease, color 0.25s ease;
+}
+.history-panel details[open] > summary::after {
+  transform: rotate(180deg);
+  color: var(--accent);
+}
+
+/* Hover/focus feedback on the header */
+.history-panel summary:hover {
+  background: color-mix(in srgb, var(--surface) 90%, var(--accent) 10%);
+  box-shadow: var(--shadow-sm);
+}
+.history-panel summary:active {
+  filter: brightness(0.98);
+}
+
+/* Animate content appearing under the summary when opening */
+.history-panel details[open] > summary + * {
+  animation: history-expand 160ms ease-out both;
+  transform-origin: top center;
+}
+@keyframes history-expand {
+  from { opacity: 0; transform: translateY(-6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+#clear-history.button {
+  background: var(--btn-neutral);
+  color: var(--text);
+  border: 1px solid var(--border);
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background 0.2s ease, transform 0.06s ease, box-shadow 0.2s ease;
+  box-shadow: var(--shadow-sm);
+}
+#clear-history.button:hover {
+  background: var(--btn-neutral-hover);
+  box-shadow: var(--shadow-md);
+}
+#clear-history.button:active {
+  transform: translateY(1px);
+}
+
+#history-list {
+  margin-top: 8px;
+  max-height: 220px;
+  overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent) transparent;
+  overscroll-behavior: contain; /* keep scroll locally contained */
+  padding-right: 2px; /* avoid scrollbar overlay on content */
+}
+#history-list::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+#history-list::-webkit-scrollbar-thumb {
+  background: linear-gradient(var(--accent), var(--accent-600));
+  border-radius: 999px;
+}
+#history-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+#history-list li {
+  position: relative; /* for left accent stripe */
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px 12px;
+  color: var(--text);
+  transition: background 0.2s ease, transform 0.06s ease, box-shadow 0.2s ease, border-color 0.2s ease, filter 0.2s ease;
+  box-shadow: var(--shadow-sm);
+
+  /* Better alignment for expressions and results (works even if it's just text) */
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: baseline;
+  gap: 8px;
+
+  font-variant-numeric: tabular-nums; /* make numbers line up nicely */
+  line-height: 1.2;
+}
+#history-list li:hover {
+  background: color-mix(in srgb, var(--surface) 90%, var(--accent) 10%);
+  border-color: color-mix(in srgb, var(--border) 70%, var(--accent) 30%);
+  box-shadow: var(--shadow-md);
+}
+/* Left accent stripe on hover for a clearer affordance */
+#history-list li:hover::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -1px;
+  bottom: -1px;
+  width: 3px;
+  background: linear-gradient(180deg, var(--accent), var(--accent-600));
+  border-radius: 10px 0 0 10px;
+}
+#history-list li:active {
+  transform: translateY(1px);
+  filter: brightness(0.98);
+}
+
+/* ====== Helper: Buttons outside keys ====== */
+.button.gray-bg {
+    background: var(--btn-neutral);
+    color: var(--text);
+    border: 1px solid var(--border);
+    padding: 8px 12px;
+    border-radius: var(--radius-lg);
+    font-weight: 600;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.15s ease, background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* ====== Selection & Accessibility ====== */
+::selection {
+  background: color-mix(in srgb, var(--accent) 30%, transparent);
+}
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* ====== Reduced Motion ====== */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+/* ====== Responsive Tweaks ====== */
+@media (max-width: 420px) {
+  .calculator {
+    padding: 12px;
+    border-radius: var(--radius-lg);
+  }
+  .keys .button,
+  .keys button {
+    height: 54px;
+  }
+  #history-list {
+    max-height: 180px;
+  }
+}
+
+/* ====== Fun Glow on Accent actions (equals) ====== */
+.keys button[data-action="equals"]:hover::after {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  pointer-events: none;
+  background: radial-gradient(200px 60px at 50% 100%, rgba(99, 102, 241, 0.25), transparent 70%);
+  filter: blur(12px);
+}

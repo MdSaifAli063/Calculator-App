@@ -1,38 +1,28 @@
 # 🧮 Modern Calculator
+# 🧮 Modern Calculator
 
 A sleek, accessible, and responsive calculator with a polished History dropdown, 🌞/🌙 theme toggle, and full memory support. Runs entirely in the browser—no build step, no dependencies.
 
 <p align="center">
-  <svg width="96" height="96" viewBox="0 0 64 64" aria-hidden="true" role="img">
-    <title>Calculator</title>
-    <defs>
-      <linearGradient id="calc-grad-1" x1="0" x2="1" y1="0" y2="1">
-        <stop offset="0" stop-color="#8b5cf6"/>
-        <stop offset="1" stop-color="#4f46e5"/>
-      </linearGradient>
-      <linearGradient id="calc-grad-2" x1="0" x2="0" y1="0" y2="1">
-        <stop offset="0" stop-color="#60a5fa"/>
-        <stop offset="1" stop-color="#0ea5e9"/>
-      </linearGradient>
-    </defs>
-    <rect x="8" y="6" width="48" height="52" rx="10" fill="#ffffff" stroke="#d1d5db" stroke-width="2"/>
-    <rect x="12" y="10" width="40" height="12" rx="4" fill="#eef2ff" stroke="#e5e7eb" stroke-width="1.5"/>
-    <g fill="#1f2937">
-      <rect x="12" y="26" width="10" height="10" rx="2"/>
-      <rect x="24" y="26" width="10" height="10" rx="2"/>
-      <rect x="36" y="26" width="10" height="10" rx="2"/>
-      <rect x="12" y="38" width="10" height="10" rx="2"/>
-      <rect x="24" y="38" width="10" height="10" rx="2"/>
-      <rect x="36" y="38" width="10" height="10" rx="2"/>
-    </g>
-    <rect x="48" y="26" width="8" height="22" rx="2" fill="url(#calc-grad-1)"/>
-    <rect x="12" y="50" width="44" height="6" rx="3" fill="url(#calc-grad-2)" opacity=".9"/>
-  </svg>
+  <img src="https://raw.githubusercontent.com/MdSaifAli063/Calculator-App/main/assets/icons/calculator-icon.png" width="96" alt="Calculator Icon">
 </p>
 
 <p align="center">
   <em>Refined History dropdown with sticky header, smooth animation, and clear affordances. Accessible focus states and keyboard support baked in.</em>
 </p>
+
+<p align="center">
+  <a href="https://github.com/MdSaifAli063/Calculator-App">
+    <img alt="GitHub stars" src="https://img.shields.io/github/stars/MdSaifAli063/Calculator-App?style=social">
+  </a>
+  <a href="https://github.com/MdSaifAli063/Calculator-App/blob/main/LICENSE">
+    <img alt="MIT License" src="https://img.shields.io/badge/license-MIT-blue.svg">
+  </a>
+  <img alt="Responsive" src="https://img.shields.io/badge/responsive-yes-brightgreen">
+  <img alt="Accessibility" src="https://img.shields.io/badge/accessibility-AA%2B-important">
+  <img alt="Theme Support" src="https://img.shields.io/badge/theme-light%20%2F%20dark-yellow">
+</p>
+
 
 <p align="center">
   <a href="https://github.com/Mdsaif4363/Calculator-App">

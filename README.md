@@ -64,16 +64,19 @@ A sleek, accessible, and responsive calculator with a polished History dropdown,
 ---
 
 
-## Overview
+## 📖 Overview
 
 This calculator focuses on clarity, speed, and accessibility:
 
-- Clean UI, responsive layout, and consistent spacing
-- History dropdown that feels native and stays usable on small screens
-- Light/Dark themes driven by CSS variables
-- Memory keys with a live indicator
+- 🧼 Clean UI, responsive layout, and consistent spacing  
+- 🧾 History dropdown that feels native and stays usable on small screens  
+- 🌗 Light/Dark themes driven by CSS variables  
+- 🧠 Memory keys with a live indicator  
 
-No frameworks, bundlers, or external CSS/JS—just HTML/CSS/JS.
+🛑 No frameworks, bundlers, or external CSS/JS—just HTML/CSS/JS.
+
+---
+
 
 ## Features
 

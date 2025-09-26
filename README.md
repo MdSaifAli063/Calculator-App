@@ -41,27 +41,28 @@ A sleek, accessible, and responsive calculator with a polished History dropdown,
 
 ![image](https://github.com/Mdsaif4363/Calculator-App/blob/fad96a8cd051713b1be06c623d1b1d6ded192e41/Screenshot%202025-08-29%20005140.png)
 
-## Contents
+## 📚 Contents
 
-- [Overview](#overview)
-- [Features](#features)
-- [Quick Start](#quick-start)
-- [Usage](#usage)
-- [Keyboard Shortcuts](#keyboard-shortcuts)
-- [History Dropdown](#history-dropdown)
-- [Memory Functions](#memory-functions)
-- [Theming](#theming)
-- [Accessibility](#accessibility)
-- [Project Structure](#project-structure)
-- [Customization](#customization)
-- [Browser Support](#browser-support)
-- [Performance Notes](#performance-notes)
-- [Roadmap](#roadmap)
-- [FAQ](#faq)
-- [Contributing](#contributing)
-- [License](#license)
+- [📖 Overview](#overview)
+- [⚙️ Features](#features)
+- [🚀 Quick Start](#quick-start)
+- [🧑‍💻 Usage](#usage)
+- [⌨️ Keyboard Shortcuts](#keyboard-shortcuts)
+- [🗂️ History Dropdown](#history-dropdown)
+- [🧠 Memory Functions](#memory-functions)
+- [🎨 Theming](#theming)
+- [♿ Accessibility](#accessibility)
+- [📁 Project Structure](#project-structure)
+- [🛠️ Customization](#customization)
+- [🌐 Browser Support](#browser-support)
+- [⚡ Performance Notes](#performance-notes)
+- [🛣️ Roadmap](#roadmap)
+- [❓ FAQ](#faq)
+- [🤝 Contributing](#contributing)
+- [📜 License](#license)
 
 ---
+
 
 ## Overview
 

@@ -1,4 +1,4 @@
-# 🧮 Modern Calculator
+
 # 🧮 Modern Calculator
 
 A sleek, accessible, and responsive calculator with a polished History dropdown, 🌞/🌙 theme toggle, and full memory support. Runs entirely in the browser—no build step, no dependencies.
@@ -23,18 +23,6 @@ A sleek, accessible, and responsive calculator with a polished History dropdown,
   <img alt="Theme Support" src="https://img.shields.io/badge/theme-light%20%2F%20dark-yellow">
 </p>
 
-
-<p align="center">
-  <a href="https://github.com/Mdsaif4363/Calculator-App">
-    <img alt="GitHub repo stars" src="https://img.shields.io/github/stars/Mdsaif4363/Calculator-App?style=social">
-  </a>
-  <a href="https://github.com/Mdsaif4363/Calculator-App/blob/main/LICENSE">
-    <img alt="MIT License" src="https://img.shields.io/badge/license-MIT-blue.svg">
-  </a>
-  <img alt="Responsive" src="https://img.shields.io/badge/responsive-yes-brightgreen">
-  <img alt="Accessibility" src="https://img.shields.io/badge/accessibility-AA%2B-important">
-  <img alt="Theme Support" src="https://img.shields.io/badge/theme-light%20%2F%20dark-yellow">
-</p>
 
 ---
 

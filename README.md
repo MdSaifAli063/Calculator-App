@@ -104,15 +104,17 @@ This calculator focuses on clarity, speed, and accessibility:
 
 ---
 
-## Quick Start
+## 🚀 Quick Start
 
-- Option A: Double-click `index.html`
-- Option B: Run a local server:
-  - Python: `python3 -m http.server 8080`
-  - Node (serve): `npx serve .`
-  - Bun: `bunx serve .`
+- 🖱️ Option A: Double-click `index.html`  
+- 🖥️ Option B: Run a local server:
+  - 🐍 Python: `python3 -m http.server 8080`  
+  - 🟦 Node: `npx serve .`  
+  - 🍞 Bun: `bunx serve .`  
 
-Open `http://localhost:8080` if you used a server.
+🔗 Open `http://localhost:8080` if you used a server.
+
+---
 
 ## Usage
 

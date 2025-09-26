@@ -116,14 +116,17 @@ This calculator focuses on clarity, speed, and accessibility:
 
 ---
 
-## Usage
+## 🧑‍💻 Usage
 
-- Click on-screen keys or type on your keyboard.
-- Press `=` to evaluate.
-- The previous expression appears above the main display.
-- Use the History dropdown to revisit or clear past calculations.
-- Memory keys manage a stored numeric value; the "M" indicator shows when memory is set.
-- Theme toggle switches Light/Dark mode.
+- Click on-screen keys or type on your keyboard  
+- Press `=` to evaluate  
+- Previous expression appears above the main display  
+- Use History dropdown to revisit or clear past calculations  
+- Memory keys manage a stored numeric value; "M" indicator shows when memory is set  
+- Theme toggle switches Light/Dark mode  
+
+---
+
 
 ## Keyboard Shortcuts
 

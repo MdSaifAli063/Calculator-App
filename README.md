@@ -188,21 +188,25 @@ Theme variables live under `:root` and `html.dark`
 
 ---
 
-## Accessibility
+## ♿ Accessibility
 
-- Focus-visible outlines help keyboard users
-- Summary is keyboard-toggleable
-- Reduced motion respected via `prefers-reduced-motion`
-- Numerals use `font-variant-numeric: tabular-nums` for readability
-- High-contrast states for critical buttons (equals, clear)
+- 🔍 Focus-visible outlines for keyboard users  
+- ⌨️ Summary is keyboard-toggleable  
+- 🌀 Reduced motion respected via `prefers-reduced-motion`  
+- 🔢 Tabular numerals for readability  
+- 🎯 High-contrast states for critical buttons  
 
-If you perform live announcements (e.g., memory changes), ensure `aria-live` regions are present in your HTML.
+📣 For live announcements (e.g., memory changes), use `aria-live` regions
 
-## Project Structure
+---
 
-- `index.html` — Markup for calculator, keys, memory controls, and history panel
-- `index.css` — Theme variables, layout, button styles, and the enhanced History dropdown
-- `index.js` — Evaluation logic, events, history/memory state, and theme toggle wiring
+## 📁 Project Structure
+
+- `index.html` — Markup for calculator, keys, memory, and history  
+- `index.css` — Theme variables, layout, button styles, history dropdown  
+- `index.js` — Evaluation logic, events, history/memory state, theme toggle  
+
+---
 
 ## Customization
 

@@ -170,20 +170,23 @@ This calculator focuses on clarity, speed, and accessibility:
 
 ---
 
-## Theming
+## 🎨 Theming
 
-Theme variables live under `:root` and `html.dark`:
+Theme variables live under `:root` and `html.dark`
 
-Key tokens:
+🎨 Key tokens:
+- `--accent`, `--accent-600`, `--accent-700`, `--accent-contrast`  
+- `--operator`, `--operator-600`  
+- `--bg`, `--bg-gradient`, `--surface`, `--surface-2`  
+- `--text`, `--text-muted`, `--border`  
+- `--radius-md`, `--radius-lg`, `--radius-xl`  
+- `--shadow-sm`, `--shadow-md`, `--shadow-lg`  
 
-- `--accent`, `--accent-600`, `--accent-700`, `--accent-contrast`
-- `--operator`, `--operator-600`
-- `--bg`, `--bg-gradient`, `--surface`, `--surface-2`
-- `--text`, `--text-muted`, `--border`
-- `--radius-md`, `--radius-lg`, `--radius-xl`
-- `--shadow-sm`, `--shadow-md`, `--shadow-lg`
+🛠️ Customize in `index.css`  
+✅ Equals button uses accent shades  
+➕ Operator buttons use operator shades  
 
-Adjust these in `index.css` to customize the look. The equals button uses accent shades; operator buttons use operator shades.
+---
 
 ## Accessibility
 

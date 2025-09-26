@@ -273,6 +273,7 @@ Theme variables live under `:root` and `html.dark`
 
 ---
 
-## License
+## 📜 License
 
-MIT License — use, modify, and distribute under the terms of the license.
+🆓 MIT License — use, modify, and distribute freely  
+📄 Add a LICENSE file for clarity in your repo

@@ -128,17 +128,19 @@ This calculator focuses on clarity, speed, and accessibility:
 ---
 
 
-## Keyboard Shortcuts
+## ⌨️ Keyboard Shortcuts
 
-- Digits: `0–9`
-- Double zero: `0` twice or use the `00` button
-- Decimal point: `.`
-- Operators: `+ - * / %`
-- Evaluate: `Enter` or `=`
-- Delete last: `Backspace`
-- Clear all: `C` or `Escape`
-- Toggle history (when summary is focused): `Space` or `Enter`
-- Navigate: `Tab` / `Shift+Tab` between interactive controls
+- 🔢 Digits: `0–9`  
+- 💯 Double zero: `0` twice or use `00` button  
+- 🔘 Decimal point: `.`  
+- ➕➖✖️➗ Operators: `+ - * / %`  
+- ✅ Evaluate: `Enter` or `=`  
+- ⬅️ Delete last: `Backspace`  
+- 🧹 Clear all: `C` or `Escape`  
+- 🔄 Toggle history: `Space` or `Enter` (when summary is focused)  
+- ↔️ Navigate: `Tab` / `Shift+Tab` between controls  
+
+---
 
 ## History Dropdown
 

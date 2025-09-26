@@ -208,22 +208,26 @@ Theme variables live under `:root` and `html.dark`
 
 ---
 
-## Customization
+## 🛠️ Customization
 
-- Max width: Adjust `.calculator` and `.history-panel` (default `420px`)
-- Key size: Tune `.keys button` height and padding
-- History height: `#history-list` `max-height` (default `220px`; `180px` on small screens)
-- Focus ring: `--focus-ring` controls color/opacity
-- Accent/brand: Change `--accent` in both light and dark contexts
-- Operator style: Tweak `--operator` variables and operator button rules
+- 📏 Max width: `.calculator`, `.history-panel` (`420px`)  
+- 🔘 Key size: `.keys button` height and padding  
+- 📐 History height: `#history-list` `max-height` (`220px`, `180px` on small screens)  
+- 🎯 Focus ring: `--focus-ring` color/opacity  
+- 🎨 Accent/brand: `--accent` in light/dark  
+- ➕ Operator style: `--operator` variables and button rules  
 
-Pro tip: Keep hover and active states consistent with semantic meaning (accent for primary, operator for math ops, warning/danger for destructive actions).
+💡 Pro tip: Keep hover/active states consistent with semantic meaning
 
-## Browser Support
+---
 
-- Latest Chrome, Edge, Firefox, Safari
-- Graceful with reduced motion preferences
-- No polyfills required for the baseline features used
+## 🌐 Browser Support
+
+- ✅ Chrome, Edge, Firefox, Safari  
+- 🌀 Honors reduced motion preferences  
+- 🧼 No polyfills required  
+
+---
 
 ## Performance Notes
 

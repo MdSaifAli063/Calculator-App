@@ -1,9 +1,8 @@
 # 🧮 Modern Calculator
 
-A sleek, accessible, and responsive calculator with a polished History dropdown, light/dark themes, and full memory support. Runs entirely in the browser—no build step, no dependencies.
+A sleek, accessible, and responsive calculator with a polished History dropdown, 🌞/🌙 theme toggle, and full memory support. Runs entirely in the browser—no build step, no dependencies.
 
 <p align="center">
-  <!-- Inline SVG icon (renders on GitHub) -->
   <svg width="96" height="96" viewBox="0 0 64 64" aria-hidden="true" role="img">
     <title>Calculator</title>
     <defs>
@@ -35,7 +34,27 @@ A sleek, accessible, and responsive calculator with a polished History dropdown,
   <em>Refined History dropdown with sticky header, smooth animation, and clear affordances. Accessible focus states and keyboard support baked in.</em>
 </p>
 
+<p align="center">
+  <a href="https://github.com/Mdsaif4363/Calculator-App">
+    <img alt="GitHub repo stars" src="https://img.shields.io/github/stars/Mdsaif4363/Calculator-App?style=social">
+  </a>
+  <a href="https://github.com/Mdsaif4363/Calculator-App/blob/main/LICENSE">
+    <img alt="MIT License" src="https://img.shields.io/badge/license-MIT-blue.svg">
+  </a>
+  <img alt="Responsive" src="https://img.shields.io/badge/responsive-yes-brightgreen">
+  <img alt="Accessibility" src="https://img.shields.io/badge/accessibility-AA%2B-important">
+  <img alt="Theme Support" src="https://img.shields.io/badge/theme-light%20%2F%20dark-yellow">
+</p>
+
 ---
+
+## 🧾 Highlights
+
+- ⚡ Instant math evaluation with memory support  
+- 🗂️ Expandable history panel with sticky header  
+- 🎨 Light/Dark theme toggle with persistent preference  
+- ♿ Fully accessible: keyboard-friendly, focus-visible, reduced motion support  
+- 🧱 No frameworks, no build tools—just HTML, CSS, and JS
 
 ## Screenshots
 

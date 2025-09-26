@@ -78,29 +78,31 @@ This calculator focuses on clarity, speed, and accessibility:
 ---
 
 
-## Features
+## ⚙️ Features
 
-- Core math: +, −, ×, ÷, %, decimal, 00
-- Equals action with subtle glow and high-contrast style
-- Memory:
-  - MC: Clear memory
-  - MR: Recall memory
-  - M+: Add to memory
-  - M−: Subtract from memory
-  - Live memory indicator updates when value exists
-- History:
-  - Expandable details/summary with sticky header
-  - Smooth open animation
-  - Hover stripe and subtle elevation cues
-  - Scrollable list with a thin, themed scrollbar
-  - Clear History button
-- Theming:
-  - Light and Dark modes via CSS variables
-  - Single toggle button
-- Accessibility:
-  - Focus-visible rings
-  - Reduced motion support
-  - Tabular numerals for aligned results
+- ➕➖✖️➗ Core math: +, −, ×, ÷, %, decimal, 00  
+- ✨ Equals action with subtle glow and high-contrast style  
+- 🧠 Memory:
+  - MC: Clear memory  
+  - MR: Recall memory  
+  - M+: Add to memory  
+  - M−: Subtract from memory  
+  - 🔔 Live memory indicator updates when value exists  
+- 🗂️ History:
+  - Expandable details/summary with sticky header  
+  - Smooth open animation  
+  - Hover stripe and subtle elevation cues  
+  - Scrollable list with a thin, themed scrollbar  
+  - 🧹 Clear History button  
+- 🎨 Theming:
+  - Light and Dark modes via CSS variables  
+  - Single toggle button  
+- ♿ Accessibility:
+  - Focus-visible rings  
+  - Reduced motion support  
+  - Tabular numerals for aligned results  
+
+---
 
 ## Quick Start
 

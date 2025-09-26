@@ -142,18 +142,18 @@ This calculator focuses on clarity, speed, and accessibility:
 
 ---
 
-## History Dropdown
+## 🗂️ History Dropdown
 
-- Built with semantic `<details>/<summary>` for native accessibility and keyboard toggling
-- Sticky header stays visible while scrolling entries
-- Opening animates content for a clear state change
-- Hovering an item reveals a subtle left accent stripe and elevates the card
-- Clear History removes all entries
+- Built with semantic `<details>/<summary>` for native accessibility  
+- 📌 Sticky header stays visible while scrolling  
+- 🎞️ Opening animates content for clear state change  
+- 🖱️ Hover reveals accent stripe and elevation  
+- 🧹 Clear History removes all entries  
 
-Tips:
+📱 Mobile tip: Sticky header keeps Clear button visible  
+🎨 Scrollbar is thin and themed to accent color  
 
-- On mobile, the sticky header avoids losing the Clear button while scrolling
-- The scrollbar is thin and themed to the accent color
+---
 
 ## Memory Functions
 

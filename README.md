@@ -155,19 +155,20 @@ This calculator focuses on clarity, speed, and accessibility:
 
 ---
 
-## Memory Functions
+## 🧠 Memory Functions
 
-- `MR`: Inserts the stored memory value into the display
-- `MC`: Clears memory and the M indicator
-- `M+`: Adds the current value/result to memory
-- `M−`: Subtracts the current value/result from memory
-- The memory indicator lights up when memory holds a value
+- `MR`: Inserts stored memory value  
+- `MC`: Clears memory and indicator  
+- `M+`: Adds current value/result to memory  
+- `M−`: Subtracts current value/result from memory  
+- 🔔 Indicator lights up when memory holds a value  
 
-Common flow:
+🧪 Common flow:
+1. Compute result → press `M+`  
+2. Later → press `MR` to reuse  
+3. Done → press `MC`  
 
-1. Compute a result, press `M+` to store
-2. Later, press `MR` to reuse
-3. Press `MC` when done
+---
 
 ## Theming
 

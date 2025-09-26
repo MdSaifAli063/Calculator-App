@@ -248,25 +248,30 @@ Theme variables live under `:root` and `html.dark`
 ---
 
 
-## FAQ
+## ❓ FAQ
 
-- Why `details/summary`?
-  - Native semantics, built-in keyboard support, and screen-reader familiarity.
-- Can I persist history?
-  - Yes — connect `#history-list` to `localStorage` in `index.js`.
-- How do I change accent color?
-  - Edit `--accent`, `--accent-600`, and `--accent-700` in `index.css` (and matching values in `html.dark`).
-- Does it support keyboard input?
-  - Yes — digits, operators, `Enter`, `Backspace`, and `Clear` are mapped.
+- ❔ Why `details/summary`?  
+  - ✅ Native semantics, keyboard support, screen-reader familiarity  
+- 💾 Can I persist history?  
+  - Yes — connect `#history-list` to `localStorage` in `index.js`  
+- 🎨 How do I change accent color?  
+  - Edit `--accent`, `--accent-600`, `--accent-700` in `index.css`  
+- ⌨️ Does it support keyboard input?  
+  - Yes — digits, operators, `Enter`, `Backspace`, `Clear`  
 
-## Contributing
+---
 
-1. Fork the repo
-2. Create a feature branch
-3. Commit with clear messages
-4. Open a PR
+## 🤝 Contributing
 
-Keep UI changes consistent with the design tokens and accessibility standards. If adding features, update this README and include a brief test plan.
+1. 🍴 Fork the repo  
+2. 🌿 Create a feature branch  
+3. 💬 Commit with clear messages  
+4. 📬 Open a PR  
+
+✅ Keep UI changes consistent with design tokens and accessibility  
+📝 Update README and include a brief test plan for new features  
+
+---
 
 ## License
 

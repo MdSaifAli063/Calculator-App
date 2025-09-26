@@ -229,19 +229,24 @@ Theme variables live under `:root` and `html.dark`
 
 ---
 
-## Performance Notes
+## ⚡ Performance Notes
 
-- No runtime dependencies or heavy assets
-- CSS-only animations kept short and GPU-friendly
-- Scroll areas use thin, themed scrollbars without JS
+- 🧱 No runtime dependencies  
+- 🎞️ CSS-only animations, GPU-friendly  
+- 🎨 Scroll areas use thin, themed scrollbars  
 
-## Roadmap
+---
 
-- Optional scientific functions (sin, cos, tan, log, pow)
-- History persistence in `localStorage`
-- Click-to-reuse entire expression from history
-- Internationalization (decimal separators)
-- Unit and E2E test coverage
+## 🛣️ Roadmap
+
+- 🧪 Scientific functions (sin, cos, tan, log, pow)  
+- 💾 History persistence via `localStorage`  
+- 🖱️ Click-to-reuse expressions from history  
+- 🌍 Internationalization (decimal separators)  
+- 🧪 Unit and E2E test coverage  
+
+---
+
 
 ## FAQ
 

@@ -1,4 +1,3 @@
-
 # 🧮 Modern Calculator
 
 A sleek, accessible, and responsive calculator with a polished History dropdown, 🌞/🌙 theme toggle, and full memory support. Runs entirely in the browser—no build step, no dependencies.

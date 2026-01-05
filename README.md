@@ -34,6 +34,7 @@ A sleek, accessible, and responsive calculator with a polished History dropdown,
 - ♿ Fully accessible: keyboard-friendly, focus-visible, reduced motion support  
 - 🧱 No frameworks, no build tools—just HTML, CSS, and JS
 
+
 ## 📸 Screenshots
 
 ![image](https://github.com/Mdsaif4363/Calculator-App/blob/fad96a8cd051713b1be06c623d1b1d6ded192e41/Screenshot%202025-08-29%20005140.png)

@@ -41,6 +41,8 @@ A sleek, accessible, and responsive calculator with a polished History dropdown,
 ![image](https://github.com/Mdsaif4363/Calculator-App/blob/fad96a8cd051713b1be06c623d1b1d6ded192e41/Screenshot%202025-08-29%20005140.png)
 
 ---
+
+
 ## 📚 Contents
 
 - [📖 Overview](#overview)

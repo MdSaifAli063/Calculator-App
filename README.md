@@ -249,7 +249,6 @@ Theme variables live under `:root` and `html.dark`
 
 ---
 
-
 ## ❓ FAQ
 
 - ❔ Why `details/summary`?  

@@ -22,7 +22,6 @@ A sleek, accessible, and responsive calculator with a polished History dropdown,
   <img alt="Theme Support" src="https://img.shields.io/badge/theme-light%20%2F%20dark-yellow">
 </p>
 
-
 ---
 
 ## 🧾 Highlights

@@ -62,7 +62,6 @@ A sleek, accessible, and responsive calculator with a polished History dropdown,
 
 ---
 
-
 ## 📖 Overview
 
 This calculator focuses on clarity, speed, and accessibility:

@@ -75,7 +75,6 @@ This calculator focuses on clarity, speed, and accessibility:
 
 ---
 
-
 ## ⚙️ Features
 
 - ➕➖✖️➗ Core math: +, −, ×, ÷, %, decimal, 00  

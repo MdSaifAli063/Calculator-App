@@ -40,7 +40,6 @@ A sleek, accessible, and responsive calculator with a polished History dropdown,
 
 ---
 
-
 ## 📚 Contents
 
 - [📖 Overview](#overview)
